@@ -143,7 +143,7 @@ function calculate() {
     document.getElementById("fnvText").innerHTML = "Fn vertical = "+parseFloat(fnv).toFixed(decimalPrecision)+"N";
     // Calculate fd
     let fd = Math.sign(angle)*Math.sqrt(fnh**2+(fg-fnv)**2)
-    document.getElementById("fdText").innerHTML = "Fd = "+parseFloat(fd).toFixed(decimalPrecision)+"N";
+    document.getElementById("fdText").innerHTML = "ΔFd = "+parseFloat(fd).toFixed(decimalPrecision)+"N";
 }
 
 window.onload = function() {
