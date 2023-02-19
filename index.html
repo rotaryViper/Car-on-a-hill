@@ -1,0 +1,47 @@
+<!--
+Made by Brandon :)
+Created: 18/2/2023
+Last Updated: 19/2/2023
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Car On A Hill</title>
+        <link href=style.css rel=stylesheet>
+        <script src=main.js async></script>
+        <meta name=viewport content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+
+    <body>
+   <!--Slider for incident angle reflector-->
+        <h1>Car On A Hill</h1>
+        <div>
+            Mass of car (kg)
+            <input type="range" id="massSlider" min="1" max="5000" value="1000" oninput="massText.value=massSlider.value;calculate()"/>
+            <input type="number" id="massText" min="1" max="5000" value="1000" oninput="massSlider.value=massText.value;calculate()"/>
+        </div>
+        <div>
+            Incline of road
+            <input type="range" id="angleSlider" min="-90" max="90" value="0" oninput="angleText.value=angleSlider.value;calculate()"/>
+            <input type="number" id="angleText" min="-90" max="90" value="0" oninput="angleSlider.value=angleText.value;calculate()"/>
+        </div>
+        <div>
+            Decimal Place Precision
+            <input type="range" id="decimalSlider" min="0" max="5" value="3" oninput="decimalText.value=decimalSlider.value;calculate()"/>
+            <input type="number" id="decimalText" min="0" max="5" value="3" oninput="decimalSlider.value=decimalText.value;calculate()"/>
+        </div>
+        <div>
+            <div id = "fgText">
+            </div>
+            <div id = "fnhText">
+            </div>
+            <div id = "fnvText">
+            </div>
+            <div id = "fdText">
+            </div>
+            <canvas id="carCanvas"></canvas>
+        </div>
+    </body>
+</html>
